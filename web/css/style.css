@@ -6,7 +6,12 @@
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: #111;
+  height: 65px;
+  width: auto;
+  align-content: center;
+  text-align: center;
+  will-change: top;
 }
 
 p {
@@ -65,10 +70,35 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
 /*
 Overrides
 Mohit Mohan
+ref issue#393 dogfalo/materialize
 */
+body{
+padding-top: 65px;
+}
+
+.nav-fixed{
+position: fixed;
+width:100%;
+height: 65px;
+right: 0;
+left: 0;
+z-index: 1000;
+will-change:top;
+}
+
+.nav-fixed {
+top: 0;
+}
+
+@media (min-width: 768px)
+.nav-fixed{
+border-radius: 0;
+}
+
 .tshadow
 {
     text-shadow: 1px 1px 5px rgba(0,0,0,0.3) !important;
@@ -85,4 +115,10 @@ Mohit Mohan
 .brand-color
 {
     color: #FFDC3A !important;
+}
+.logo-img
+{
+    height: 65px;
+    width: auto;
+    will-change:top;
 }

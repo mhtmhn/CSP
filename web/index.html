@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+    
 <head>
+    
+    
   <meta name="theme-color" content="#FFDC3A">
   <meta name=description content="Coimbatore Smiley Project's Official Homepage">
   <meta name=author content="Mohit Mohan">
   <meta name="keywords" content="Non-Profit, Trust for Education, Coimbatore Charity">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="icon" sizes="192x192" href="img/icon/192.png">
+  <link rel="icon" sizes="64x64" href="img/icon/64.png">
+  <link rel="icon" sizes="32x32" href="img/icon/32.png">
+  <link rel="icon" sizes="16x16" href="img/icon/16.png">
   <title>Coimbatore Smiley Project</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/normalize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    
+    
 </head>
+    
+    
 <body>
-  <nav class="white" role="navigation">
+    
+    
+  <nav class="white nav-fixed" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><font class="brand-color">CSP</font></a>
+      <a id="logo-container" href="#secn0" class="brand-logo"><img src="img/icon/192.png" class="logo-img"></img></a>
       <ul class="right hide-on-med-and-down waves-effect waves-light">
-        <li><a href="#">Nav</a></li>
+        <li><a href="#secn1">Nav</a></li>
+        <li><a href="#secn2">Nav</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav waves-effect waves-light">
-        <li><a href="#">Nav</a></li>
+        <li><a href="#secn0">Nav</a></li>
+        <li><a href="#secn1">Nav</a></li>
+        <li><a href="#secn2">Nav</a></li>
       </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
+    
+    
+    <section id=secn0>
   <div id="index-banner" class="parallax-container">
     <div id="logo-banner" class="section no-pad-bot brand-logo-bg z-depth-5">
         <div class="center">
@@ -40,7 +60,7 @@
         <br><br>
         <h1 id="logo-banner-text" class="header center text-lighten-2 tshadow brand-color">Coimbatore Smiley Project</h1>
         <div class="row center">
-          <h5 class="header col s12 text-lighten-3 tshadow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac.</h5>
+          <h5 id="logo-banner-text" class="header col s12 text-lighten-3 tshadow">Funding education. Funding progress.</h5>
         </div>
         <div class="row center">
           <a href="#" id="button" class="z-depth-2 btn-large waves-effect waves-light brand-color black lighten-1">Smiley Story</a>
@@ -50,7 +70,7 @@
     </div>
     <div class="parallax"><img src="img/bgi/background1.jpg" alt="Unsplashed background img 1"></div>
   </div>
-
+    </section>
 
   <div class="container">
     <div class="section">
@@ -88,7 +108,7 @@
     </div>
   </div>
 
-
+    <section id=secn1>
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
@@ -99,6 +119,7 @@
     </div>
     <div class="parallax"><img src="img/bgi/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
+    </section>
 
   <div class="container">
     <div class="section">
@@ -114,7 +135,7 @@
     </div>
   </div>
 
-
+    <section id=secn2>
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
@@ -125,6 +146,7 @@
     </div>
     <div class="parallax"><img src="img/bgi/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
+    </section>
 
     <div class="container">
     <div class="section">
@@ -176,9 +198,14 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/TweenLite.min.js"></script>
+  <script src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/core.js"></script>
 
+    
   </body>
+
+
 </html>
