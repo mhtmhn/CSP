@@ -14,8 +14,36 @@ nav .brand-logo {
   will-change: top;
 }
 
+.title1{
+    font-family: 'Schoolbell', cursive !important;
+    font-weight: 400 !important;
+    font-size: 44pt !important;
+}
+
+.title2{
+    font-family: 'Chewy', cursive !important;
+    font-weight: 400 !important;
+    font-size: 22pt !important;
+}
+
+.llax-title{
+    color: black;
+    font-family: 'Chewy', cursive !important;
+    font-weight: 400 !important;
+    font-size: 68pt !important;
+}
+
+.p-heading{
+    font-family: 'Fredoka One', cursive !important;
+    font-weight: 400 !important;
+    font-size: 22pt !important;
+}
 p {
-  line-height: 2rem;
+  font-family: 'Patrick Hand', cursive !important;
+  font-weight: 400 !important;
+  font-size: 18pt !important;
+  text-align: justify !important;
+  line-height: 2rem !important;
 }
 
 .button-collapse {
