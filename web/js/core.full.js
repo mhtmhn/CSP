@@ -1,13 +1,30 @@
 //mhtmhn
 //Smooth scroll
 $(function() {
+  var $window = $(window);
+  var scrollTime = 0.15;
+  var scrollDistance = 150;
+  var deltaDivide = 200;
+  var detailDivide= 5;
+  $window.on("mousewheel DOMMouseScroll", function(event) {
+    event.preventDefault();
+    var delta = event.originalEvent.wheelDelta / deltaDivide || -event.originalEvent.detail / detailDivide;
+    var scrollTop = $window.scrollTop();
+    var finalScroll = scrollTop - parseInt(delta * scrollDistance);
+    TweenMax.to($window, scrollTime, {
+      scrollTo: {
+        y: finalScroll
+      },
+      ease: Sine.easeOut, y: 0, autokill:true});
+  });
+});
+$(function() {
   $('a[href*=#]:not([href=#])').click(function(e) {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        disableScroll();
-        TweenLite.to(document.body, 0.8, {scrollTop: (target.offset().top-65), ease:Power1.easeInOut, onComplete:enableScroll});
+        TweenMax.to(document.body, 1, {scrollTop: (target.offset().top-65), ease:Power1.easeInOut, onStart:disableScroll, onComplete:enableScroll});
         preventDefault(e);
         preventDefaultForScrollKeys(e);
       }
