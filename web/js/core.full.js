@@ -21,7 +21,7 @@ $(window).load(function () {
 //Firefox Friendly Smooth Scroll
 $(function(){
 
-var $links = $("a");
+var $links = $("#scroll-class a");
 var $sections = $(".content-section");
 
 var headerOffset = 65;
