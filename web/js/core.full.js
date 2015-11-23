@@ -1,4 +1,23 @@
 //mhtmhn
+//Preloader
+//<![CDATA[
+$(window).load(function () {
+    window.setTimeout(load,150);
+});
+
+function load() {
+
+    $('#lspin').fadeOut();
+    $('#loader').delay(350).fadeOut('fast');
+}
+/*
+$(window).load(function () {
+    $('#lspin').fadeOut();
+    $('#loader').delay(350).fadeOut('slow');
+});
+*/
+//]]>
+
 //Smooth scroll
 $(function() {
   var $window = $(window);
